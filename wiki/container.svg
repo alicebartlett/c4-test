@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1520px" preserveAspectRatio="none" style="width:1321px;height:1520px;background:#FFFFFF;" version="1.1" viewBox="0 0 1321 1520" width="1321px" zoomAndPan="magnify"><defs/><g><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><rect fill="#FFFFFF" height="941" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="424" x="243.5" y="193"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="123" x="394" y="209.8516">The Light App</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="428" y="224.7637">[System]</text><!--MD5=[00b78acf869eecaf292da84b099b423b]
+entity ft_edit_app--><rect fill="#438DD5" height="85.1875" style="stroke:#3C7FC0;stroke-width:1.5;" width="153" x="506" y="260.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="95" x="535" y="285.3516">Mobile app</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="562.5" y="300.2637">[Swift]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="584.5" y="316.0889"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="520" y="332.3857">The native iOS app</text><!--MD5=[f7061fc4cc2ff02bef73332b85ec9260]
+entity healthcheck_lambda--><rect fill="#438DD5" height="134.0781" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="252" y="236"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="183" x="270" y="260.8516">Healthcheck Lambda</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="92" x="315.5" y="275.7637">[AWS Lambda]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="363.5" y="291.5889"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="276.5" y="307.8857">Calls all other services to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="279.5" y="324.1826">check they are healthy.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="262" y="340.4795">Arrows have been omitted to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="314" y="356.7764">reduce noise.</text><!--MD5=[5affe3c2476404d62f4166b2051295da]
+entity fastly--><rect fill="#438DD5" height="152.7031" style="stroke:#3C7FC0;stroke-width:1.5;" width="213" x="407" y="636"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="153" x="434" y="660.8516">Fastly mobile app</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="54" x="486.5" y="679.4766">config</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="33" x="497" y="694.3887">[VCL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="515.5" y="710.2139"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="421" y="726.5107">Not used for cacheing, just</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="417" y="742.8076">to direct *.ft.com to an AWS</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="419" y="759.1045">generated AppSync URL or</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="471" y="775.4014">healthcheck</text><!--MD5=[ccd603de7d299ea22c9eeea2068bcd8f]
+entity aws_appsync_api--><rect fill="#438DD5" height="85.1875" style="stroke:#3C7FC0;stroke-width:1.5;" width="206" x="388.5" y="1041"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="158" x="412.5" y="1065.8516">AWS Appsync API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="38" x="472.5" y="1080.7637">[AWS]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="493.5" y="1096.5889"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="402.5" y="1112.8857">Exposes GraphQL scehma</text><!--MD5=[6f43796a8b66756a604243dd0700b46d]
+entity edit_reader--><rect fill="#08427B" height="119.2188" style="stroke:#073B6F;stroke-width:1.5;" width="206" x="479.5" y="7"/><image height="48" width="48" x="558.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="17"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="129" x="518" y="79.8516">FT Edit Reader</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="584.5" y="96.6201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="493.5" y="112.917">A person using the FT Edit</text><!--MD5=[c2655ce3bf1e7fc41951504c61ef49ec]
+entity firebase--><rect fill="#999999" height="169" style="stroke:#8A8A8A;stroke-width:1.5;" width="220" x="784.5" y="1243"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="75" x="857" y="1267.8516">Firebase</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="896.5" y="1284.6201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="806" y="1300.917">Recives and stores native</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="824.5" y="1317.2139">app analytics. Holds</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="806" y="1333.5107">configuration for the app,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="803.5" y="1349.8076">enabling feature flags and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="795" y="1366.1045">A/B tests. Provides a service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="794.5" y="1382.4014">to validate the integrity of the</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="879.5" y="1398.6982">app.</text><!--MD5=[4f29d811d01901edfd427c01d49ff4a8]
+entity spoor--><rect fill="#999999" height="87.5156" style="stroke:#8A8A8A;stroke-width:1.5;" width="179" x="1136" y="459"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="52" x="1199.5" y="483.8516">Spoor</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1227.5" y="500.6201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="1150" y="516.917">Stores analytics for FT</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="1194.5" y="533.2139">products</text><!--MD5=[2ac5b0a7bfef612f4b750a05743ccfb7]
+entity membership--><rect fill="#999999" height="87.5156" style="stroke:#8A8A8A;stroke-width:1.5;" width="217" x="7" y="1283.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="181" x="25" y="1308.3516">Membership System</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="117.5" y="1325.1201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="21" y="1341.417">Stores data about customer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="47" y="1357.7139">access permissions</text><!--MD5=[9efbd61336edb71976716396d059bc45]
+entity app_api--><rect fill="#999999" height="103.8125" style="stroke:#8A8A8A;stroke-width:1.5;" width="206" x="259.5" y="1275.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="70" x="327.5" y="1300.3516">App API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="364.5" y="1317.1201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="276.5" y="1333.417">API that provides articles.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="269.5" y="1349.7139">Built for and maintained by</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="296" y="1366.0107">the Main App team.</text><!--MD5=[db7d0b6842fd793f6363e9151444e9ef]
+entity next_api--><rect fill="#999999" height="103.8125" style="stroke:#8A8A8A;stroke-width:1.5;" width="206" x="500.5" y="1275.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="79" x="564" y="1300.3516">Next-API</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="605.5" y="1317.1201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="517.5" y="1333.417">API that provides articles.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="510.5" y="1349.7139">Built for and maintained by</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="543" y="1366.0107">the FT.com team.</text><!--MD5=[76642c686924d2234c32dd0968779847]
+entity api_gateway--><rect fill="#999999" height="87.5156" style="stroke:#8A8A8A;stroke-width:1.5;" width="165" x="676" y="892"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="702" y="916.8516">API Gateway</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="760.5" y="933.6201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="690" y="949.917">Provides a publically</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="686" y="966.2139">accessible static URL</text><!--MD5=[0905ff9f0467a7d3c9762380db10539d]
+entity in_app_billing_service--><rect fill="#999999" height="71.2188" style="stroke:#8A8A8A;stroke-width:1.5;" width="204" x="22.5" y="467.5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="184" x="32.5" y="492.3516">In App Billing Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="126.5" y="509.1201"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="69" y="525.417">Buy subscription</text><!--MD5=[ea67cbd573b35d83a2d503be0c10fd4d]
+link edit_reader to ft_edit_app--><path d="M582.5,126.1789 C582.5,165.1073 582.5,215.3656 582.5,252.3449 " fill="none" id="edit_reader-to-ft_edit_app" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="582.5,260.4967,585.5,252.4967,579.5,252.4967,582.5,260.4967" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="147" x="583.5" y="168.1387">Log in, read articles,</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="127" x="593.5" y="182.1074">bookmark articles</text><!--MD5=[1ffc5a379cd0fefa49a19cf5c7e8022e]
+link ft_edit_app to fastly--><path d="M575.3111,345.6648 C564.098,412.212 542.2304,541.9915 527.7427,627.9725 " fill="none" id="ft_edit_app-to-fastly" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="526.408,635.8938,530.6956,628.5035,524.779,627.5065,526.408,635.8938" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="137" x="558" y="479.6387">Makes API calls (via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="140" x="556.5" y="493.6074">generated GraphQL</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="101" x="576" y="507.5762">classes). Calls</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="583" y="521.5449">Healthcheck</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="64" x="596.5" y="535.5137">endpoint</text><!--MD5=[9feb7eaa33f2f0320f8528365e5a3714]
+link fastly to aws_appsync_api--><path d="M508.9416,789.3714 C504.6174,862.2925 498.2427,969.793 494.5167,1032.6281 " fill="none" id="fastly-to-aws_appsync_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="494.0312,1040.8143,497.4995,1033.0059,491.51,1032.6507,494.0312,1040.8143" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="143" x="503.5" y="926.6387">Directs traffic to the</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="121" x="514.5" y="940.6074">AWS Appsync API</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="27" x="563.5" y="954.5762">URL</text><!--MD5=[be9a06f8f3afb8e1fdac467d3fa410ad]
+link fastly to api_gateway--><path d="M522.9749,789.2585 C529.7941,815.4413 541.4837,842.8975 561.5,862 C596.5922,895.4902 622.1219,875.8485 668.2184,890.6177 " fill="none" id="fastly-to-api_gateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="675.7978,893.2969,669.255,887.8022,667.2553,893.4591,675.7978,893.2969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="124" x="562.5" y="838.1387">TODO: GALLAL TO</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="586.5" y="852.1074">CHECK THIS</text><!--MD5=[4412bd147679b183733cf0dca66176c5]
+link api_gateway to healthcheck_lambda--><path d="M752.9252,891.59 C738.129,774.0187 698.7695,463.3185 695.5,459 C635.0521,379.1583 578.8577,413.1755 488.5,370 C485.1841,368.4155 481.8289,366.7914 478.4499,365.1374 " fill="none" id="api_gateway-to-healthcheck_lambda" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="471.0209,361.4725,476.868,367.7023,479.5226,362.3215,471.0209,361.4725" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="132" x="722" y="589.1387">Forwards traffic to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="147" x="716.5" y="603.1074">Healthcheck Lambda</text><!--MD5=[8c6c8697abf41f207c63adfdd90a3a18]
+link ft_edit_app to in_app_billing_service--><path d="M529.2764,345.6164 C516.4351,354.5514 502.3948,363.2874 488.5,370 C445.1831,390.9266 430.0277,384.4598 384.5,400 C317.0937,423.0081 301.7174,432.7657 235.5,459 C231.0553,460.7609 226.5106,462.5616 221.92,464.3807 " fill="none" id="ft_edit_app-to-in_app_billing_service" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="214.1605,467.4557,222.703,467.2974,220.4926,461.7194,214.1605,467.4557" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="118" x="385.5" y="419.1387">Buy subscription</text><!--MD5=[fd194772ed2501871387aae4d2637ebd]
+link in_app_billing_service to membership--><path d="M122.0407,538.5659 C119.376,580.228 115.5,651.3395 115.5,712.5 C115.5,712.5 115.5,712.5 115.5,1083.5 C115.5,1149.5734 115.5,1225.7112 115.5,1275.121 " fill="none" id="in_app_billing_service-to-membership" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="115.5,1283.4208,118.5,1275.4208,112.5,1275.4208,115.5,1283.4208" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="118" x="116.5" y="940.6387">Buy subscription</text><!--MD5=[04b4cb814eee98c114e86f36efd01477]
+link ft_edit_app to firebase--><path d="M652.0458,345.7167 C721.3998,392.7305 823.97,475.3007 869.5,577 C882.7027,606.4906 890.4509,1040.5096 893.2738,1234.7357 " fill="none" id="ft_edit_app-to-firebase" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="893.3924,1242.9547,896.2765,1234.9122,890.2771,1234.9989,893.3924,1242.9547" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="149" x="886.5" y="831.1387">Sends analytics data</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="111" x="903.5" y="845.1074">to, gets remote</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="131" x="895.5" y="859.0762">configuration from</text><!--MD5=[04b4cb814eee98c114e86f36efd01477]
+link ft_edit_app to firebase--><path d="M659.2562,317.1472 C799.416,345.1836 1082.5,412.9551 1082.5,503 C1082.5,503 1082.5,503 1082.5,1083.5 C1082.5,1142.2356 1047.894,1195.4857 1008.3766,1237.1455 " fill="none" id="ft_edit_app-to-firebase-1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1002.7711,1242.9463,1010.4876,1239.2781,1006.1729,1235.1087,1002.7711,1242.9463" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="124" x="1083.5" y="845.1387">Tell me who I am?</text><!--MD5=[ddbf93015d0905bc4b756aa44f2ae83c]
+link ft_edit_app to spoor--><path d="M659.0114,312.0123 C785.0791,327.7042 1030.2954,362.0197 1108.5,400 C1135.1982,412.9661 1160.4946,433.7269 1180.6902,453.2239 " fill="none" id="ft_edit_app-to-spoor" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1186.5182,458.9521,1182.9155,451.2048,1178.7097,455.484,1186.5182,458.9521" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="149" x="1151.5" y="412.1387">Sends analytics data</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="15" x="1218.5" y="426.1074">to</text><!--MD5=[c0c80b4209cef495e22a5733a571fe4a]
+link aws_appsync_api to firebase--><path d="M594.5161,1105.555 C629.1565,1116.5736 666.3636,1132.7036 695.5,1156 C718.9021,1174.7115 710.839,1191.2998 731.5,1213 C745.3944,1227.5932 761.4077,1241.4749 777.8557,1254.213 " fill="none" id="aws_appsync_api-to-firebase" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="784.4249,1259.2243,779.8839,1251.987,776.2448,1256.7574,784.4249,1259.2243" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="131" x="732.5" y="1182.1387">Is this person who</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="132" x="734" y="1196.1074">they say they are?</text><!--MD5=[f67e53497a7694cd404720b9f1266d02]
+link aws_appsync_api to membership--><path d="M388.2748,1101.4452 C320.4651,1114.8641 239.3343,1134.5345 211.5,1156 C172.3632,1186.1819 146.7812,1237.1117 131.9443,1275.6492 " fill="none" id="aws_appsync_api-to-membership" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="129.1193,1283.1816,134.7375,1276.7445,129.1196,1274.6376,129.1193,1283.1816" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="132" x="218" y="1168.1387">Create user, log in</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="147" x="212.5" y="1182.1074">user, check user has</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="143" x="212.5" y="1196.0762">subscription, create</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="242" y="1210.0449">subscription</text><!--MD5=[6162f6238bd4ff8b5b74886176e867d2]
+link aws_appsync_api to next_api--><path d="M508.8201,1126.067 C519.3438,1151.4692 533.2629,1184.2708 546.5,1213 C554.7934,1230.9996 564.2322,1250.3656 573.0097,1267.9575 " fill="none" id="aws_appsync_api-to-next_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="576.7257,1275.3791,575.8264,1266.8826,570.4614,1269.5689,576.7257,1275.3791" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="547.5" y="1175.1387">Gets list of articles,</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="129" x="552.5" y="1189.1074">gets metadata for</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="45" x="596.5" y="1203.0762">article</text><!--MD5=[8fabb4dd4ea9c64caed8a82da5d06b6e]
+link aws_appsync_api to app_api--><path d="M417.8351,1126.2672 C407.687,1134.9523 398.3983,1144.8861 391.5,1156 C371.0072,1189.0157 363.789,1232.1735 361.678,1266.9349 " fill="none" id="aws_appsync_api-to-app_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="361.2645,1275.1238,364.6642,1267.2853,358.6719,1266.9826,361.2645,1275.1238" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="116" x="392.5" y="1175.1387">Requests article</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="86" x="407.5" y="1189.1074">content and</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="63" x="421" y="1203.0762">furniture</text><rect fill="#FFFFFF" height="79.1875" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="152" x="1147" y="1425"/><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="140" x="1153" y="1432"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="1153" y="1444.9951">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1216" y="1444.9951"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="140" x="1153" y="1448.2969"/><text fill="#073B6F" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1157" y="1461.292">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1169" y="1461.292"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="1173" y="1461.292">person</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1230" y="1461.292"/><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="140" x="1153" y="1464.5938"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1157" y="1477.5889">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1169" y="1477.5889"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1173" y="1477.5889">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1246" y="1477.5889"/><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="140" x="1153" y="1480.8906"/><text fill="#8A8A8A" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="1157" y="1493.8857">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1169" y="1493.8857"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="1173" y="1493.8857">external_system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1293" y="1493.8857"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1293" y1="1432" y2="1432"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1293" y1="1448.2969" y2="1448.2969"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1293" y1="1464.5938" y2="1464.5938"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1293" y1="1480.8906" y2="1480.8906"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1293" y1="1497.1875" y2="1497.1875"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1153" x2="1153" y1="1432" y2="1497.1875"/><line style="stroke:#00000000;stroke-width:1.0;" x1="1293" x2="1293" y1="1432" y2="1497.1875"/><!--MD5=[fe1ca78b5aae4c471b115acfaca25979]
+@startuml container
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(edit_reader, "FT Edit Reader", "A person using the FT Edit")
+
+System_Boundary(c1, "The Light App") {
+  Container(ft_edit_app, "Mobile app", "Swift", "The native iOS app")
+  Container(healthcheck_lambda, "Healthcheck Lambda", "AWS Lambda", "Calls all other services to check they are healthy. Arrows have been omitted to reduce noise.")
+  Container(fastly, "Fastly mobile app config", "VCL", "Not used for cacheing, just to direct *.ft.com to an AWS generated AppSync URL or healthcheck")
+  Container(aws_appsync_api, "AWS Appsync API", "AWS", "Exposes GraphQL scehma")
+}
+
+System_Ext(firebase, "Firebase", "Recives and stores native app analytics. Holds configuration for the app, enabling feature flags and A/B tests. Provides a service to validate the integrity of the app.")
+System_Ext(spoor, "Spoor", "Stores analytics for FT products")
+System_Ext(membership, "Membership System", "Stores data about customer access permissions")
+System_Ext(app_api, "App API", "API that provides articles. Built for and maintained by the Main App team.")
+System_Ext(next_api, "Next-API", "API that provides articles. Built for and maintained by the FT.com team.")
+System_Ext(api_gateway, "API Gateway", "Provides a publically accessible static URL")
+
+System_Ext(in_app_billing_service, "In App Billing Service", "Buy subscription")
+
+
+Rel(edit_reader, ft_edit_app, "Log in, read articles, bookmark articles")
+
+Rel(ft_edit_app, fastly, "Makes API calls (via generated GraphQL classes). Calls Healthcheck endpoint")
+Rel(fastly, aws_appsync_api, "Directs traffic to the AWS Appsync API URL")
+Rel(fastly, api_gateway, "TODO: GALLAL TO CHECK THIS")
+
+Rel(api_gateway, healthcheck_lambda, "Forwards traffic to Healthcheck Lambda")
+
+Rel(ft_edit_app, in_app_billing_service, "Buy subscription")
+Rel(in_app_billing_service, membership, "Buy subscription")
+
+Rel(ft_edit_app, firebase, "Sends analytics data to, gets remote configuration from")
+Rel(ft_edit_app, spoor, "Sends analytics data to")
+Rel(ft_edit_app, firebase, "Tell me who I am?")
+
+Rel(aws_appsync_api, firebase, "Is this person who they say they are?")
+Rel(aws_appsync_api, membership, "Create user, log in user, check user has subscription, create subscription")
+Rel(aws_appsync_api, next_api, "Gets list of articles, gets metadata for article")
+Rel(aws_appsync_api, app_api, "Requests article content and furniture")
+
+SHOW_LEGEND()
+
+
+@enduml
+
+@startuml container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "<$person>\n==FT Edit Reader\n\n A person using the FT Edit" <<person>> as edit_reader 
+
+rectangle "==The Light App\n<size:12>[System]</size>" <<boundary>> as c1  {
+  rectangle "==Mobile app\n//<size:12>[Swift]</size>//\n\n The native iOS app" <<container>> as ft_edit_app 
+  rectangle "==Healthcheck Lambda\n//<size:12>[AWS Lambda]</size>//\n\n Calls all other services to check they are healthy. Arrows have been omitted to reduce noise." <<container>> as healthcheck_lambda 
+  rectangle "==Fastly mobile app config\n//<size:12>[VCL]</size>//\n\n Not used for cacheing, just to direct *.ft.com to an AWS generated AppSync URL or healthcheck" <<container>> as fastly 
+  rectangle "==AWS Appsync API\n//<size:12>[AWS]</size>//\n\n Exposes GraphQL scehma" <<container>> as aws_appsync_api 
+}
+
+rectangle "==Firebase\n\n Recives and stores native app analytics. Holds configuration for the app, enabling feature flags and A/B tests. Provides a service to validate the integrity of the app." <<external_system>> as firebase 
+rectangle "==Spoor\n\n Stores analytics for FT products" <<external_system>> as spoor 
+rectangle "==Membership System\n\n Stores data about customer access permissions" <<external_system>> as membership 
+rectangle "==App API\n\n API that provides articles. Built for and maintained by the Main App team." <<external_system>> as app_api 
+rectangle "==Next-API\n\n API that provides articles. Built for and maintained by the FT.com team." <<external_system>> as next_api 
+rectangle "==API Gateway\n\n Provides a publically accessible static URL" <<external_system>> as api_gateway 
+
+rectangle "==In App Billing Service\n\n Buy subscription" <<external_system>> as in_app_billing_service 
+
+
+edit_reader - ->> ft_edit_app : **Log in, read articles, bookmark articles**
+
+ft_edit_app - ->> fastly : **Makes API calls (via generated GraphQL classes). Calls Healthcheck endpoint**
+fastly - ->> aws_appsync_api : **Directs traffic to the AWS Appsync API URL**
+fastly - ->> api_gateway : **TODO: GALLAL TO CHECK THIS**
+
+api_gateway - ->> healthcheck_lambda : **Forwards traffic to Healthcheck Lambda**
+
+ft_edit_app - ->> in_app_billing_service : **Buy subscription**
+in_app_billing_service - ->> membership : **Buy subscription**
+
+ft_edit_app - ->> firebase : **Sends analytics data to, gets remote configuration from**
+ft_edit_app - ->> spoor : **Sends analytics data to**
+ft_edit_app - ->> firebase : **Tell me who I am?**
+
+aws_appsync_api - ->> firebase : **Is this person who they say they are?**
+aws_appsync_api - ->> membership : **Create user, log in user, check user has subscription, create subscription**
+aws_appsync_api - ->> next_api : **Gets list of articles, gets metadata for article**
+aws_appsync_api - ->> app_api : **Requests article content and furniture**
+
+hide stereotype
+legend right
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#08427B><color:#073B6F> <U+25AF></color> <color:#FFFFFF> person </color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external_system </color> |
+endlegend
+
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 12:40:07 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
