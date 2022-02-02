@@ -1,0 +1,47 @@
+@startuml container
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(edit_reader, "FT Edit Reader", "A person using the FT Edit")
+
+System_Boundary(c1, "The Light App") {
+  Container(ft_edit_app, "Mobile app", "Swift", "The native iOS app")
+  Container(healthcheck_lambda, "Healthcheck Lambda", "AWS Lambda", "Calls all other services to check they are healthy. Arrows have been omitted to reduce noise.")
+  Container(fastly, "Fastly mobile app config", "VCL", "Not used for cacheing, just to direct *.ft.com to an AWS generated AppSync URL or healthcheck")
+  Container(aws_appsync_api, "AWS Appsync API", "AWS", "Exposes GraphQL scehma")
+}
+
+System_Ext(firebase, "Firebase", "Recives and stores native app analytics. Holds configuration for the app, enabling feature flags and A/B tests. Provides a service to validate the integrity of the app.")
+System_Ext(spoor, "Spoor", "Stores analytics for FT products")
+System_Ext(membership, "Membership System", "Stores data about customer access permissions")
+System_Ext(app_api, "App API", "API that provides articles. Built for and maintained by the Main App team.")
+System_Ext(next_api, "Next-API", "API that provides articles. Built for and maintained by the FT.com team.")
+System_Ext(api_gateway, "API Gateway", "Provides a publically accessible static URL")
+
+System_Ext(in_app_billing_service, "In App Billing Service", "Buy subscription")
+
+
+Rel(edit_reader, ft_edit_app, "Log in, read articles, bookmark articles")
+
+Rel(ft_edit_app, fastly, "Makes API calls (via generated GraphQL classes). Calls Healthcheck endpoint")
+Rel(fastly, aws_appsync_api, "Directs traffic to the AWS Appsync API URL")
+Rel(fastly, api_gateway, "TODO: GALLAL TO CHECK THIS")
+
+Rel(api_gateway, healthcheck_lambda, "Forwards traffic to Healthcheck Lambda")
+
+Rel(ft_edit_app, in_app_billing_service, "Buy subscription")
+Rel(in_app_billing_service, membership, "Buy subscription")
+
+Rel(ft_edit_app, firebase, "Sends analytics data to, gets remote configuration from")
+Rel(ft_edit_app, spoor, "Sends analytics data to")
+Rel(ft_edit_app, firebase, "Tell me who I am?")
+
+Rel(aws_appsync_api, firebase, "Is this person who they say they are?")
+Rel(aws_appsync_api, membership, "Create user, log in user, check user has subscription, create subscription")
+Rel(aws_appsync_api, next_api, "Gets list of articles, gets metadata for article")
+Rel(aws_appsync_api, app_api, "Requests article content and furniture")
+
+SHOW_LEGEND()
+
+
+@enduml
