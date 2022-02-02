@@ -1,0 +1,24 @@
+name: diagrams
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+jobs:
+  diagrams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate SVG diagrams
+        uses: docker://vearutop/plantuml:v1.2021.7
+        with:
+          entrypoint: /bin/sh
+          args: -c "cd diagrams && ls -lah && java -Djava.awt.headless=true -jar /plantuml.jar -tsvg -o ../wiki *.puml"
+      - name: Push to wiki
+        run: |
+          cd wiki
+          ls -lah
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Update diagrams" && git push
